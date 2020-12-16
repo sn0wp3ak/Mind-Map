@@ -17,18 +17,18 @@ Contents:
 </div><div class="vym-toc-branch-1"><a href="#mc:0,bo:0"> 1.  Here Doc</a></br>
 </div><div class="vym-toc-branch-2"><a href="#mc:0,bo:0,bo:0"> 1.1.  Format</a></br>
 </div><div class="vym-toc-branch-3"><a href="#mc:0,bo:0,bo:0,bo:0"> 1.1.1.  Double quotation marks / None (Escape)</a></br>
-</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:0,bo:0,bo:0,bo:0"> 1.1.1.1.  $var = &lt;&lt; &quot;EOF&quot;; 
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:0,bo:0,bo:0,bo:0"> 1.1.1.1.  $var = &lt;&lt;&quot;EOF&quot;; 
 
 here doc content...
 
 EOF</a></br>
-</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:0,bo:0,bo:0,bo:1"> 1.1.1.2.  print &lt;&lt; EOF;
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:0,bo:0,bo:0,bo:1"> 1.1.1.2.  print &lt;&lt;EOF;
 
 here doc content...
 
 EOF</a></br>
 </div><div class="vym-toc-branch-3"><a href="#mc:0,bo:0,bo:0,bo:1"> 1.1.2.  Single quotation marks (Don't Escape)</a></br>
-</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:0,bo:0,bo:1,bo:0"> 1.1.2.1.  $var = &lt;&lt; 'EOF';
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:0,bo:0,bo:1,bo:0"> 1.1.2.1.  $var = &lt;&lt;'EOF';
 
 here doc content...
 
@@ -37,9 +37,59 @@ EOF</a></br>
 </div><div class="vym-toc-branch-2"><a href="#mc:0,bo:1,bo:0"> 2.1.  Invariant $</a></br>
 </div><div class="vym-toc-branch-3"><a href="#mc:0,bo:1,bo:0,bo:0"> 2.1.1.  Multiline String</a></br>
 </div><div class="vym-toc-branch-4"><a href="#mc:0,bo:1,bo:0,bo:0,bo:0"> 2.1.1.1.  Use Single quotation marks</a></br>
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:1,bo:0,bo:0,bo:1"> 2.1.1.2.  Use Here Doc</a></br>
 </div><div class="vym-toc-branch-3"><a href="#mc:0,bo:1,bo:0,bo:1"> 2.1.2.  Splicing String</a></br>
 </div><div class="vym-toc-branch-4"><a href="#mc:0,bo:1,bo:0,bo:1,bo:0"> 2.1.2.1.  Use Dot</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:1,bo:0,bo:2"> 2.1.3.  Special character</a></br>
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:1,bo:0,bo:2,bo:0"> 2.1.3.1.  __FILE__</a></br>
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:1,bo:0,bo:2,bo:1"> 2.1.3.2.  __LINE__</a></br>
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:1,bo:0,bo:2,bo:2"> 2.1.3.3.  __PACKAGE__</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:1,bo:0,bo:3"> 2.1.4.  V String</a></br>
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:1,bo:0,bo:3,bo:0"> 2.1.4.1.  start with v, splice with dot</a></br>
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:1,bo:0,bo:3,bo:1"> 2.1.4.2.  use int number (ascii) to build a string</a></br>
 </div><div class="vym-toc-branch-2"><a href="#mc:0,bo:1,bo:1"> 2.2.  Array @</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:1,bo:1,bo:0"> 2.2.1.  Access Item : $array[index]</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:1,bo:1,bo:1"> 2.2.2.  create array</a></br>
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:1,bo:1,bo:1,bo:0"> 2.2.2.1.  @array = (item1, item2, ...);</a></br>
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:1,bo:1,bo:1,bo:1"> 2.2.2.2.  @array = qw/item1 item2 .../;</a></br>
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:1,bo:1,bo:1,bo:2"> 2.2.2.3.  @array = qw/item1
+
+item2
+
+...
+
+itemn/;</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:1,bo:1,bo:2"> 2.2.3.  serializable array</a></br>
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:1,bo:1,bo:2,bo:0"> 2.2.3.1.  start value + .. + end value</a></br>
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:1,bo:1,bo:2,bo:1"> 2.2.3.2.  @array = (1..10)
+
+&gt;&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10</a></br>
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:1,bo:1,bo:2,bo:2"> 2.2.3.3.  @array = (a..f)
+
+&gt;&gt; a, b, c, d, e, f</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:1,bo:1,bo:3"> 2.2.4.  array size</a></br>
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:1,bo:1,bo:3,bo:0"> 2.2.4.1.  what $array return  is physical size not item number</a></br>
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:1,bo:1,bo:3,bo:1"> 2.2.4.2.  @array = (1, 2, 3);
+
+$array[10] = 4;
+
+$size = @array;
+
+print &quot;array_size = $size&quot;;
+
+&gt;&gt; 11
+
+$max_index = $#array;
+
+print &quot;max_index = $max_index&quot;;
+
+&gt;&gt; 10</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:1,bo:1,bo:4"> 2.2.5.  add or del item</a></br>
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:1,bo:1,bo:4,bo:0"> 2.2.5.1.  add</a></br>
+</div><div class="vym-toc-branch-5"><a href="#mc:0,bo:1,bo:1,bo:4,bo:0,bo:0"> 2.2.5.1.1.  push(@array, item1, item2 ...)</a></br>
+</div><div class="vym-toc-branch-5"><a href="#mc:0,bo:1,bo:1,bo:4,bo:0,bo:1"> 2.2.5.1.2.  unshift(@array, item1, item2 ...)</a></br>
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:1,bo:1,bo:4,bo:1"> 2.2.5.2.  delete</a></br>
+</div><div class="vym-toc-branch-5"><a href="#mc:0,bo:1,bo:1,bo:4,bo:1,bo:0"> 2.2.5.2.1.  </a></br>
 </div><div class="vym-toc-branch-2"><a href="#mc:0,bo:1,bo:2"> 2.3.  Hash %</a></br>
 </div><div class="vym-toc-branch-0"><a href="#mc:1">  </a></br>
 </div></td></tr>
@@ -54,12 +104,12 @@ EOF</a></br>
       <ul class="vym-list-ul-3">
         <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:0,bo:0,bo:0'>1.1.1.  Double quotation marks / None (Escape)</span>
         <ul class="vym-list-ul-4">
-          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:0,bo:0,bo:0,bo:0'>1.1.1.1.  $var = &lt;&lt; &quot;EOF&quot;; 
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:0,bo:0,bo:0,bo:0'>1.1.1.1.  $var = &lt;&lt;&quot;EOF&quot;; 
 
 here doc content...
 
 EOF</span>  </li>
-          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:0,bo:0,bo:0,bo:1'>1.1.1.2.  print &lt;&lt; EOF;
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:0,bo:0,bo:0,bo:1'>1.1.1.2.  print &lt;&lt;EOF;
 
 here doc content...
 
@@ -67,7 +117,7 @@ EOF</span>  </li>
         </ul>  </li>
         <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:0,bo:0,bo:1'>1.1.2.  Single quotation marks (Don't Escape)</span>
         <ul class="vym-list-ul-4">
-          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:0,bo:0,bo:1,bo:0'>1.1.2.1.  $var = &lt;&lt; 'EOF';
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:0,bo:0,bo:1,bo:0'>1.1.2.1.  $var = &lt;&lt;'EOF';
 
 here doc content...
 
@@ -82,54 +132,208 @@ EOF</span>  </li>
         <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:1,bo:0,bo:0'>2.1.1.  Multiline String</span>
         <ul class="vym-list-ul-4">
           <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:1,bo:0,bo:0,bo:0'>2.1.1.1.  Use Single quotation marks<img src="flags/flag-exclamationmark.png" alt="Flag: exclamationmark"></span>  </li>
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:1,bo:0,bo:0,bo:1'>2.1.1.2.  Use Here Doc</span>  </li>
         </ul>  </li>
         <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:1,bo:0,bo:1'>2.1.2.  Splicing String</span>
         <ul class="vym-list-ul-4">
           <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:1,bo:0,bo:1,bo:0'>2.1.2.1.  Use Dot</span>  </li>
         </ul>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:1,bo:0,bo:2'>2.1.3.  Special character</span>
+        <ul class="vym-list-ul-4">
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:1,bo:0,bo:2,bo:0'>2.1.3.1.  __FILE__</span>
+<table class="vym-note"><tr><td class="vym-note-flag">
+<td>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt;">File you are editing now</span></p>
+</td></tr></table>
+  </li>
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:1,bo:0,bo:2,bo:1'>2.1.3.2.  __LINE__</span>
+<table class="vym-note"><tr><td class="vym-note-flag">
+<td>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono'; font-size:12pt; color:#000000;">Line number in this file where the character is.</span></p>
+</td></tr></table>
+  </li>
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:1,bo:0,bo:2,bo:2'>2.1.3.3.  __PACKAGE__</span>
+<table class="vym-note"><tr><td class="vym-note-flag">
+<td>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono'; font-size:12pt; color:#000000;">Name of the package where this file is.</span></p>
+</td></tr></table>
+  </li>
+        </ul>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:1,bo:0,bo:3'>2.1.4.  V String<img src="flags/flag-lamp.png" alt="Flag: lamp"></span>
+        <ul class="vym-list-ul-4">
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:1,bo:0,bo:3,bo:0'>2.1.4.1.  start with v, splice with dot</span>  </li>
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:1,bo:0,bo:3,bo:1'>2.1.4.2.  use int number (ascii) to build a string</span>  </li>
+        </ul>  </li>
       </ul>  </li>
-      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:1,bo:1'>2.2.  Array @</span>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:1,bo:1'>2.2.  Array @</span>
+      <ul class="vym-list-ul-3">
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:1,bo:1,bo:0'>2.2.1.  Access Item : $array[index]</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:1,bo:1,bo:1'>2.2.2.  create array</span>
+        <ul class="vym-list-ul-4">
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:1,bo:1,bo:1,bo:0'>2.2.2.1.  @array = (item1, item2, ...);</span>  </li>
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:1,bo:1,bo:1,bo:1'>2.2.2.2.  @array = qw/item1 item2 .../;</span>  </li>
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:1,bo:1,bo:1,bo:2'>2.2.2.3.  @array = qw/item1
+
+item2
+
+...
+
+itemn/;</span>  </li>
+        </ul>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:1,bo:1,bo:2'>2.2.3.  serializable array</span>
+        <ul class="vym-list-ul-4">
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:1,bo:1,bo:2,bo:0'>2.2.3.1.  start value + .. + end value</span>  </li>
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:1,bo:1,bo:2,bo:1'>2.2.3.2.  @array = (1..10)
+
+&gt;&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10</span>  </li>
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:1,bo:1,bo:2,bo:2'>2.2.3.3.  @array = (a..f)
+
+&gt;&gt; a, b, c, d, e, f</span>  </li>
+        </ul>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:1,bo:1,bo:3'>2.2.4.  array size<img src="flags/flag-lamp.png" alt="Flag: lamp"></span>
+        <ul class="vym-list-ul-4">
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:1,bo:1,bo:3,bo:0'>2.2.4.1.  what $array return  is physical size not item number<img src="flags/flag-exclamationmark.png" alt="Flag: exclamationmark"></span>  </li>
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:1,bo:1,bo:3,bo:1'>2.2.4.2.  @array = (1, 2, 3);
+
+$array[10] = 4;
+
+$size = @array;
+
+print &quot;array_size = $size&quot;;
+
+&gt;&gt; 11
+
+$max_index = $#array;
+
+print &quot;max_index = $max_index&quot;;
+
+&gt;&gt; 10</span>  </li>
+        </ul>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:1,bo:1,bo:4'>2.2.5.  add or del item</span>
+        <ul class="vym-list-ul-4">
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:1,bo:1,bo:4,bo:0'>2.2.5.1.  add</span>
+          <ul class="vym-list-ul-5">
+            <li><span class='vym-branch-5' style='color:#000000' id='mc:0,bo:1,bo:1,bo:4,bo:0,bo:0'>2.2.5.1.1.  push(@array, item1, item2 ...)</span>
+<table class="vym-note"><tr><td class="vym-note-flag">
+<td>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono'; font-size:12pt; color:#000000;">seems like append in python list</span></p>
+</td></tr></table>
+  </li>
+            <li><span class='vym-branch-5' style='color:#000000' id='mc:0,bo:1,bo:1,bo:4,bo:0,bo:1'>2.2.5.1.2.  unshift(@array, item1, item2 ...)</span>
+<table class="vym-note"><tr><td class="vym-note-flag">
+<td>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono'; font-size:12pt; color:#000000;">add the whole item list at the head of the array</span></p>
+<p class="vym-note-paragraph"><br /></p>
+</td></tr></table>
+  </li>
+          </ul>  </li>
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:1,bo:1,bo:4,bo:1'>2.2.5.2.  delete</span>
+          <ul class="vym-list-ul-5">
+            <li><span class='vym-branch-5' style='color:#000000' id='mc:0,bo:1,bo:1,bo:4,bo:1,bo:0'>2.2.5.2.1.  </span>  </li>
+          </ul>  </li>
+        </ul>  </li>
+      </ul>  </li>
       <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:1,bo:2'>2.3.  Hash %</span>  </li>
     </ul>
   
 <h1><span class='vym-branch-0' style='color:#000000' id='mc:1'> </span></h1>
 
 <map name='imagemap'>
-  <area shape='rect' coords='6.5,280.584,121.25,313.584' href='#mc:0' alt='Perl Syntax'>
-  <area shape='rect' coords='177.635,94.5,265.589,125.5' href='#mc:0,bo:0' alt='Here Doc'>
-  <area shape='rect' coords='286.589,96.5,345.667,123.5' href='#mc:0,bo:0,bo:0' alt='Format'>
-  <area shape='rect' coords='388.667,63,684.901,90' href='#mc:0,bo:0,bo:0,bo:0' alt='Double quotation marks / None (Escape)'>
-  <area shape='rect' coords='707.901,8.5,847.745,73.5' href='#mc:0,bo:0,bo:0,bo:0,bo:0' alt='$var = &lt;&lt; &quot;EOF&quot;; 
+  <area shape='rect' coords='867.772,606.155,1001.07,639.155' href='#mc:0' alt='Perl Syntax'>
+  <area shape='rect' coords='723.906,434.864,808.656,463.864' href='#mc:0,bo:0' alt='Here Doc'>
+  <area shape='rect' coords='615.344,434.864,680.906,463.864' href='#mc:0,bo:0,bo:0' alt='Format'>
+  <area shape='rect' coords='221.781,398.364,594.344,427.364' href='#mc:0,bo:0,bo:0,bo:0' alt='Double quotation marks / None (Escape)'>
+  <area shape='rect' coords='8.5,338.864,198.781,409.864' href='#mc:0,bo:0,bo:0,bo:0,bo:0' alt='$var = &lt;&lt;&quot;EOF&quot;; 
 
 here doc content...
 
 EOF'>
-  <area shape='rect' coords='707.901,79.5,847.745,144.5' href='#mc:0,bo:0,bo:0,bo:0,bo:1' alt='print &lt;&lt; EOF;
+  <area shape='rect' coords='8.5,415.864,198.781,486.864' href='#mc:0,bo:0,bo:0,bo:0,bo:1' alt='print &lt;&lt;EOF;
 
 here doc content...
 
 EOF'>
-  <area shape='rect' coords='388.667,167.5,668.182,194.5' href='#mc:0,bo:0,bo:0,bo:1' alt='Single quotation marks (Don't Escape)'>
-  <area shape='rect' coords='689.182,148.5,829.026,213.5' href='#mc:0,bo:0,bo:0,bo:1,bo:0' alt='$var = &lt;&lt; 'EOF';
+  <area shape='rect' coords='231.375,511.864,594.344,540.864' href='#mc:0,bo:0,bo:0,bo:1' alt='Single quotation marks (Don't Escape)'>
+  <area shape='rect' coords='20.0938,490.864,210.375,561.864' href='#mc:0,bo:0,bo:0,bo:1,bo:0' alt='$var = &lt;&lt;'EOF';
 
 here doc content...
 
 EOF'>
-  <area shape='rect' coords='199.225,432.434,292.366,463.434' href='#mc:0,bo:1' alt='Data Type'>
-  <area shape='rect' coords='313.366,405.434,395.506,432.434' href='#mc:0,bo:1,bo:0' alt='Invariant $'>
-  <area shape='rect' coords='416.506,390.934,529.053,417.934' href='#mc:0,bo:1,bo:0,bo:0' alt='Multiline String'>
-  <area shape='rect' coords='550.053,390.934,752.897,417.934' href='#mc:0,bo:1,bo:0,bo:0,bo:0' alt='Use Single quotation marks'>
-  <area shape='rect' coords='416.506,419.934,526.522,446.934' href='#mc:0,bo:1,bo:0,bo:1' alt='Splicing String'>
-  <area shape='rect' coords='547.522,419.934,614.084,446.934' href='#mc:0,bo:1,bo:0,bo:1,bo:0' alt='Use Dot'>
-  <area shape='rect' coords='313.366,448.934,379.709,475.934' href='#mc:0,bo:1,bo:1' alt='Array @'>
-  <area shape='rect' coords='313.366,477.934,377.225,504.934' href='#mc:0,bo:1,bo:2' alt='Hash %'>
-  <area shape='rect' coords='90.3965,172.486,104.225,205.486' href='#mc:1' alt=''>
+  <area shape='rect' coords='1049.33,441,1143.67,470' href='#mc:0,bo:1' alt='Data Type'>
+  <area shape='rect' coords='1164.67,113.5,1278.21,142.5' href='#mc:0,bo:1,bo:0' alt='Invariant $'>
+  <area shape='rect' coords='1299.21,20.5,1460.71,49.5' href='#mc:0,bo:1,bo:0,bo:0' alt='Multiline String'>
+  <area shape='rect' coords='1481.71,5,1739.14,34' href='#mc:0,bo:1,bo:0,bo:0,bo:0' alt='Use Single quotation marks'>
+  <area shape='rect' coords='1481.71,36,1604.83,65' href='#mc:0,bo:1,bo:0,bo:0,bo:1' alt='Use Here Doc'>
+  <area shape='rect' coords='1299.21,67,1451.11,96' href='#mc:0,bo:1,bo:0,bo:1' alt='Splicing String'>
+  <area shape='rect' coords='1472.11,67,1547.27,96' href='#mc:0,bo:1,bo:0,bo:1,bo:0' alt='Use Dot'>
+  <area shape='rect' coords='1299.21,129,1470.3,158' href='#mc:0,bo:1,bo:0,bo:2' alt='Special character'>
+  <area shape='rect' coords='1513.3,98,1598.05,127' href='#mc:0,bo:1,bo:0,bo:2,bo:0' alt='__FILE__'>
+  <area shape='rect' coords='1513.3,129,1598.05,158' href='#mc:0,bo:1,bo:0,bo:2,bo:1' alt='__LINE__'>
+  <area shape='rect' coords='1513.3,160,1626.83,189' href='#mc:0,bo:1,bo:0,bo:2,bo:2' alt='__PACKAGE__'>
+  <area shape='rect' coords='1299.21,206.5,1383.96,235.5' href='#mc:0,bo:1,bo:0,bo:3' alt='V String'>
+  <area shape='rect' coords='1426.96,191,1722.77,220' href='#mc:0,bo:1,bo:0,bo:3,bo:0' alt='start with v, splice with dot'>
+  <area shape='rect' coords='1426.96,222,1828.3,251' href='#mc:0,bo:1,bo:0,bo:3,bo:1' alt='use int number (ascii) to build a string'>
+  <area shape='rect' coords='1164.67,549.5,1239.83,578.5' href='#mc:0,bo:1,bo:1' alt='Array @'>
+  <area shape='rect' coords='1260.83,253,1527.86,282' href='#mc:0,bo:1,bo:1,bo:0' alt='Access Item : $array[index]'>
+  <area shape='rect' coords='1260.83,346.5,1383.96,375.5' href='#mc:0,bo:1,bo:1,bo:1' alt='create array'>
+  <area shape='rect' coords='1404.96,284,1691.17,313' href='#mc:0,bo:1,bo:1,bo:1,bo:0' alt='@array = (item1, item2, ...);'>
+  <area shape='rect' coords='1404.96,315,1691.17,344' href='#mc:0,bo:1,bo:1,bo:1,bo:1' alt='@array = qw/item1 item2 .../;'>
+  <area shape='rect' coords='1404.96,346,1576.05,438' href='#mc:0,bo:1,bo:1,bo:1,bo:2' alt='@array = qw/item1
+
+item2
+
+...
+
+itemn/;'>
+  <area shape='rect' coords='1260.83,492,1441.52,521' href='#mc:0,bo:1,bo:1,bo:2' alt='serializable array'>
+  <area shape='rect' coords='1462.52,440,1755.92,469' href='#mc:0,bo:1,bo:1,bo:2,bo:0' alt='start value + .. + end value'>
+  <area shape='rect' coords='1462.52,471,1777.52,521' href='#mc:0,bo:1,bo:1,bo:2,bo:1' alt='@array = (1..10)
+
+&gt;&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10'>
+  <area shape='rect' coords='1462.52,523,1662.39,573' href='#mc:0,bo:1,bo:1,bo:2,bo:2' alt='@array = (a..f)
+
+&gt;&gt; a, b, c, d, e, f'>
+  <area shape='rect' coords='1260.83,664,1364.77,693' href='#mc:0,bo:1,bo:1,bo:3' alt='array size'>
+  <area shape='rect' coords='1407.77,575,1914.64,604' href='#mc:0,bo:1,bo:1,bo:3,bo:0' alt='what $array return  is physical size not item number'>
+  <area shape='rect' coords='1407.77,606,1713.17,782' href='#mc:0,bo:1,bo:1,bo:3,bo:1' alt='@array = (1, 2, 3);
+
+$array[10] = 4;
+
+$size = @array;
+
+print &quot;array_size = $size&quot;;
+
+&gt;&gt; 11
+
+$max_index = $#array;
+
+print &quot;max_index = $max_index&quot;;
+
+&gt;&gt; 10'>
+  <area shape='rect' coords='1260.83,815,1412.74,844' href='#mc:0,bo:1,bo:1,bo:4' alt='add or del item'>
+  <area shape='rect' coords='1433.74,799.5,1470.52,828.5' href='#mc:0,bo:1,bo:1,bo:4,bo:0' alt='add'>
+  <area shape='rect' coords='1513.52,784,1818.92,813' href='#mc:0,bo:1,bo:1,bo:4,bo:0,bo:0' alt='push(@array, item1, item2 ...)'>
+  <area shape='rect' coords='1513.52,815,1838.11,844' href='#mc:0,bo:1,bo:1,bo:4,bo:0,bo:1' alt='unshift(@array, item1, item2 ...)'>
+  <area shape='rect' coords='1433.74,846,1499.3,875' href='#mc:0,bo:1,bo:1,bo:4,bo:1' alt='delete'>
+  <area shape='rect' coords='1520.3,848.5,1531.91,872.5' href='#mc:0,bo:1,bo:1,bo:4,bo:1,bo:0' alt=''>
+  <area shape='rect' coords='1164.67,877,1230.24,906' href='#mc:0,bo:1,bo:2' alt='Hash %'>
+  <area shape='rect' coords='2388.67,795.057,2402.5,828.057' href='#mc:1' alt=''>
 </map>
 <hr/>
 <table class="vym-footer">   
         <tr> 
         <td class="vym-footerL">/home/normal/Local_Mind_Map/Perl_Syntax_Export/Perl_Syntax.html</td> 
-            <td class="vym-footerC">2020-12-13</td> 
+            <td class="vym-footerC">2020-12-16</td> 
             <td class="vym-footerR"> <a href='http://www.insilmaril.de/vym'>vym 2.7.500</a></td> 
             </tr> 
              </table>
