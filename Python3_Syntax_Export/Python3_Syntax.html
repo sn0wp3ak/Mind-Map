@@ -63,6 +63,13 @@ comment text2...
 </div><div class="vym-toc-branch-2"><a href="#mc:0,bo:3,bo:0"> 4.1.  %s</a></br>
 </div><div class="vym-toc-branch-2"><a href="#mc:0,bo:3,bo:1"> 4.2.  %d</a></br>
 </div><div class="vym-toc-branch-2"><a href="#mc:0,bo:3,bo:2"> 4.3.  %f</a></br>
+</div><div class="vym-toc-branch-1"><a href="#mc:0,bo:4"> 5.  Operator</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:4,bo:0"> 5.1.  arithmetic operator</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:4,bo:1"> 5.2.  assigning operator</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:4,bo:2"> 5.3.  arithmetic + assigning operator</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:4,bo:3"> 5.4.  relational operator</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:4,bo:3,bo:0"> 5.4.1.  comparative</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:4,bo:3,bo:1"> 5.4.2.  logical</a></br>
 </div></td></tr>
 </table>
 
@@ -138,8 +145,8 @@ comment text2...
 <td>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
 
-<p class="vym-fixed-note-paragraph"><span style=" font-family:'Courier','Source Code Pro'; font-size:12pt; font-weight:384; color:#000000;">convert string to the original date type,</span></p>
-<p class="vym-fixed-note-paragraph"><span style=" font-family:'Courier','Source Code Pro'; font-size:12pt; font-weight:384; color:#000000;">take off the quotation marks.</span></p>
+<p class="vym-note-paragraph"><span style=" font-family:'Courier','Source Code Pro'; font-size:12pt; font-weight:384; color:#000000;">convert string to the original data type,</span></p>
+<p class="vym-note-paragraph"><span style=" font-family:'Courier','Source Code Pro'; font-size:12pt; font-weight:384; color:#000000;">take off the quotation marks.</span></p>
 </td></tr></table>
   </li>
       </ul>  </li>
@@ -160,7 +167,6 @@ comment text2...
 <p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">keyword</span></p>
 <p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">3.print(&quot;----{a}----{b}----&quot;.format(a=var1, b=var2))</span></p>
 <p class="vym-note-paragraph"><br /></p>
-<p class="vym-note-paragraph"><br /></p>
 <p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">for %s the f string is better!</span></p>
 <p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">a = &quot;apple&quot;</span></p>
 <p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">b = &quot;banana&quot;</span></p>
@@ -172,59 +178,112 @@ comment text2...
       <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:3,bo:1'>4.2.  %d</span>  </li>
       <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:3,bo:2'>4.3.  %f</span>  </li>
     </ul>
+  <h2><span class='vym-branch-1' style='color:#000000' id='mc:0,bo:4'>5.  Operator</span></h2>
+    <ul class="vym-list-ul-2">
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:4,bo:0'>5.1.  arithmetic operator</span>
+<table class="vym-note"><tr><td class="vym-note-flag">
+<td>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+
+<p class="vym-note-paragraph"><span style=" font-family:'Sans Serif','Source Code Pro'; font-size:12pt;">+ - * / // % ** ()</span></p>
+</td></tr></table>
+  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:4,bo:1'>5.2.  assigning operator</span>
+<table class="vym-note"><tr><td class="vym-note-flag">
+<td>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">=</span></p>
+</td></tr></table>
+  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:4,bo:2'>5.3.  arithmetic + assigning operator</span>
+<table class="vym-note"><tr><td class="vym-note-flag">
+<td>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">+= -= *= /= //= **= %=</span></p>
+</td></tr></table>
+  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:4,bo:3'>5.4.  relational operator</span>
+      <ul class="vym-list-ul-3">
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:4,bo:3,bo:0'>5.4.1.  comparative</span>
+<table class="vym-note"><tr><td class="vym-note-flag">
+<td>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">== != &gt; &lt; &gt;= &lt;=</span></p>
+</td></tr></table>
+  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:4,bo:3,bo:1'>5.4.2.  logical</span>
+<table class="vym-note"><tr><td class="vym-note-flag">
+<td>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">and or not</span></p>
+</td></tr></table>
+  </li>
+      </ul>  </li>
+    </ul>
   
 
 <map name='imagemap'>
-  <area shape='rect' coords='328.631,215.83,512.943,250.83' href='#mc:0' alt='Python3 Syntax'>
-  <area shape='rect' coords='567.108,97,654.842,130' href='#mc:0,bo:0' alt='Comment'>
-  <area shape='rect' coords='675.842,5,789.373,34' href='#mc:0,bo:0,bo:0' alt='Single Line'>
-  <area shape='rect' coords='810.373,5,952.686,34' href='#mc:0,bo:0,bo:0,bo:0' alt='# comment text'>
-  <area shape='rect' coords='675.842,114.5,770.186,143.5' href='#mc:0,bo:0,bo:1' alt='Muti Line'>
-  <area shape='rect' coords='791.186,36,952.686,128' href='#mc:0,bo:0,bo:1,bo:0' alt='''' 
+  <area shape='rect' coords='352.249,218.332,536.562,253.332' href='#mc:0' alt='Python3 Syntax'>
+  <area shape='rect' coords='595.084,97,682.818,130' href='#mc:0,bo:0' alt='Comment'>
+  <area shape='rect' coords='703.818,5,817.349,34' href='#mc:0,bo:0,bo:0' alt='Single Line'>
+  <area shape='rect' coords='838.349,5,980.662,34' href='#mc:0,bo:0,bo:0,bo:0' alt='# comment text'>
+  <area shape='rect' coords='703.818,114.5,798.162,143.5' href='#mc:0,bo:0,bo:1' alt='Muti Line'>
+  <area shape='rect' coords='819.162,36,980.662,128' href='#mc:0,bo:0,bo:1,bo:0' alt='''' 
 
 comment text1
 
 comment text2...
 
 ''''>
-  <area shape='rect' coords='791.186,130,952.686,222' href='#mc:0,bo:0,bo:1,bo:1' alt='&quot;&quot;&quot;
+  <area shape='rect' coords='819.162,130,980.662,222' href='#mc:0,bo:0,bo:1,bo:1' alt='&quot;&quot;&quot;
 
 comment text1
 
 comment text2...
 
 &quot;&quot;&quot;'>
-  <area shape='rect' coords='560.137,363.68,613.7,396.68' href='#mc:0,bo:1' alt='Name'>
-  <area shape='rect' coords='634.7,334.68,777.012,363.68' href='#mc:0,bo:1,bo:0' alt='Big Camel-Case'>
-  <area shape='rect' coords='798.012,334.68,873.169,363.68' href='#mc:0,bo:1,bo:0,bo:0' alt='VarName'>
-  <area shape='rect' coords='634.7,365.68,805.794,394.68' href='#mc:0,bo:1,bo:1' alt='little Camel-Case'>
-  <area shape='rect' coords='826.794,365.68,901.95,394.68' href='#mc:0,bo:1,bo:1,bo:0' alt='varName'>
-  <area shape='rect' coords='634.7,396.68,729.044,425.68' href='#mc:0,bo:1,bo:2' alt='underline'>
-  <area shape='rect' coords='750.044,396.68,834.794,425.68' href='#mc:0,bo:1,bo:2,bo:0' alt='var_name'>
-  <area shape='rect' coords='261,385.682,371.516,418.682' href='#mc:0,bo:2' alt='Date Type'>
-  <area shape='rect' coords='174.438,170.682,240,199.682' href='#mc:0,bo:2,bo:0' alt='Number'>
-  <area shape='rect' coords='116.656,155.182,153.438,184.182' href='#mc:0,bo:2,bo:0,bo:0' alt='Int'>
-  <area shape='rect' coords='97.4688,186.182,153.438,215.182' href='#mc:0,bo:2,bo:0,bo:1' alt='Float'>
-  <area shape='rect' coords='164.844,232.682,240,261.682' href='#mc:0,bo:2,bo:1' alt='Boolean'>
-  <area shape='rect' coords='97.4688,217.182,143.844,246.182' href='#mc:0,bo:2,bo:1,bo:0' alt='True'>
-  <area shape='rect' coords='87.875,248.182,143.844,277.182' href='#mc:0,bo:2,bo:1,bo:1' alt='False'>
-  <area shape='rect' coords='203.219,279.182,240,308.182' href='#mc:0,bo:2,bo:2' alt='Str'>
-  <area shape='rect' coords='193.625,310.182,240,339.182' href='#mc:0,bo:2,bo:3' alt='List'>
-  <area shape='rect' coords='184.031,341.182,240,370.182' href='#mc:0,bo:2,bo:4' alt='Tuple'>
-  <area shape='rect' coords='203.219,372.182,240,401.182' href='#mc:0,bo:2,bo:5' alt='Set'>
-  <area shape='rect' coords='193.625,403.182,240,432.182' href='#mc:0,bo:2,bo:6' alt='Dict'>
-  <area shape='rect' coords='164.844,527.182,240,556.182' href='#mc:0,bo:2,bo:7' alt='Convert'>
-  <area shape='rect' coords='11.125,434.182,143.844,463.182' href='#mc:0,bo:2,bo:7,bo:0' alt='int(x[,base])'>
-  <area shape='rect' coords='59.0938,465.182,143.844,494.182' href='#mc:0,bo:2,bo:7,bo:1' alt='float(x)'>
-  <area shape='rect' coords='78.2813,496.182,143.844,525.182' href='#mc:0,bo:2,bo:7,bo:2' alt='str(x)'>
-  <area shape='rect' coords='59.0938,527.182,143.844,556.182' href='#mc:0,bo:2,bo:7,bo:3' alt='tuple(x)'>
-  <area shape='rect' coords='68.6875,558.182,143.844,587.182' href='#mc:0,bo:2,bo:7,bo:4' alt='list(x)'>
-  <area shape='rect' coords='78.2813,589.182,143.844,618.182' href='#mc:0,bo:2,bo:7,bo:5' alt='set(x)'>
-  <area shape='rect' coords='27.5,620.182,121.844,649.182' href='#mc:0,bo:2,bo:7,bo:6' alt='eval(str)'>
-  <area shape='rect' coords='264.437,89.9799,420.515,122.98' href='#mc:0,bo:3' alt='Format Output'>
-  <area shape='rect' coords='194.249,60.9799,221.437,89.9799' href='#mc:0,bo:3,bo:0' alt='%s'>
-  <area shape='rect' coords='194.249,91.9799,221.437,120.98' href='#mc:0,bo:3,bo:1' alt='%d'>
-  <area shape='rect' coords='194.249,122.98,221.437,151.98' href='#mc:0,bo:3,bo:2' alt='%f'>
+  <area shape='rect' coords='585.801,366.929,639.363,399.929' href='#mc:0,bo:1' alt='Name'>
+  <area shape='rect' coords='660.363,337.929,802.676,366.929' href='#mc:0,bo:1,bo:0' alt='Big Camel-Case'>
+  <area shape='rect' coords='823.676,337.929,898.832,366.929' href='#mc:0,bo:1,bo:0,bo:0' alt='VarName'>
+  <area shape='rect' coords='660.363,368.929,831.457,397.929' href='#mc:0,bo:1,bo:1' alt='little Camel-Case'>
+  <area shape='rect' coords='852.457,368.929,927.613,397.929' href='#mc:0,bo:1,bo:1,bo:0' alt='varName'>
+  <area shape='rect' coords='660.363,399.929,754.707,428.929' href='#mc:0,bo:1,bo:2' alt='underline'>
+  <area shape='rect' coords='775.707,399.929,860.457,428.929' href='#mc:0,bo:1,bo:2,bo:0' alt='var_name'>
+  <area shape='rect' coords='261,405.262,371.516,438.262' href='#mc:0,bo:2' alt='Date Type'>
+  <area shape='rect' coords='174.438,190.262,240,219.262' href='#mc:0,bo:2,bo:0' alt='Number'>
+  <area shape='rect' coords='116.656,174.762,153.438,203.762' href='#mc:0,bo:2,bo:0,bo:0' alt='Int'>
+  <area shape='rect' coords='97.4688,205.762,153.438,234.762' href='#mc:0,bo:2,bo:0,bo:1' alt='Float'>
+  <area shape='rect' coords='164.844,252.262,240,281.262' href='#mc:0,bo:2,bo:1' alt='Boolean'>
+  <area shape='rect' coords='97.4688,236.762,143.844,265.762' href='#mc:0,bo:2,bo:1,bo:0' alt='True'>
+  <area shape='rect' coords='87.875,267.762,143.844,296.762' href='#mc:0,bo:2,bo:1,bo:1' alt='False'>
+  <area shape='rect' coords='203.219,298.762,240,327.762' href='#mc:0,bo:2,bo:2' alt='Str'>
+  <area shape='rect' coords='193.625,329.762,240,358.762' href='#mc:0,bo:2,bo:3' alt='List'>
+  <area shape='rect' coords='184.031,360.762,240,389.762' href='#mc:0,bo:2,bo:4' alt='Tuple'>
+  <area shape='rect' coords='203.219,391.762,240,420.762' href='#mc:0,bo:2,bo:5' alt='Set'>
+  <area shape='rect' coords='193.625,422.762,240,451.762' href='#mc:0,bo:2,bo:6' alt='Dict'>
+  <area shape='rect' coords='164.844,546.762,240,575.762' href='#mc:0,bo:2,bo:7' alt='Convert'>
+  <area shape='rect' coords='11.125,453.762,143.844,482.762' href='#mc:0,bo:2,bo:7,bo:0' alt='int(x[,base])'>
+  <area shape='rect' coords='59.0938,484.762,143.844,513.762' href='#mc:0,bo:2,bo:7,bo:1' alt='float(x)'>
+  <area shape='rect' coords='78.2813,515.762,143.844,544.762' href='#mc:0,bo:2,bo:7,bo:2' alt='str(x)'>
+  <area shape='rect' coords='59.0938,546.762,143.844,575.762' href='#mc:0,bo:2,bo:7,bo:3' alt='tuple(x)'>
+  <area shape='rect' coords='68.6875,577.762,143.844,606.762' href='#mc:0,bo:2,bo:7,bo:4' alt='list(x)'>
+  <area shape='rect' coords='78.2813,608.762,143.844,637.762' href='#mc:0,bo:2,bo:7,bo:5' alt='set(x)'>
+  <area shape='rect' coords='27.5,639.762,121.844,668.762' href='#mc:0,bo:2,bo:7,bo:6' alt='eval(str)'>
+  <area shape='rect' coords='225.055,57.4818,381.134,90.4818' href='#mc:0,bo:3' alt='Format Output'>
+  <area shape='rect' coords='154.868,28.4818,182.055,57.4818' href='#mc:0,bo:3,bo:0' alt='%s'>
+  <area shape='rect' coords='154.868,59.4818,182.055,88.4818' href='#mc:0,bo:3,bo:1' alt='%d'>
+  <area shape='rect' coords='154.868,90.4818,182.055,119.482' href='#mc:0,bo:3,bo:2' alt='%f'>
+  <area shape='rect' coords='596.177,522.664,679.584,553.664' href='#mc:0,bo:4' alt='Operator'>
+  <area shape='rect' coords='722.584,461.664,912.865,490.664' href='#mc:0,bo:4,bo:0' alt='arithmetic operator'>
+  <area shape='rect' coords='722.584,492.664,903.271,521.664' href='#mc:0,bo:4,bo:1' alt='assigning operator'>
+  <area shape='rect' coords='722.584,523.664,1027.99,552.664' href='#mc:0,bo:4,bo:2' alt='arithmetic + assigning operator'>
+  <area shape='rect' coords='700.584,570.164,890.865,599.164' href='#mc:0,bo:4,bo:3' alt='relational operator'>
+  <area shape='rect' coords='933.865,554.664,1047.4,583.664' href='#mc:0,bo:4,bo:3,bo:0' alt='comparative'>
+  <area shape='rect' coords='933.865,585.664,1009.02,614.664' href='#mc:0,bo:4,bo:3,bo:1' alt='logical'>
 </map>
 <hr/>
 <table class="vym-footer">   
