@@ -1,0 +1,237 @@
+<html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+<meta name="generator=" content=" vym - view your mind - 2.7.500 - http://www.insilmaril.de/vym">
+<meta name="author" content="unknown user"> 
+<meta name="description" content=""> 
+<link rel='stylesheet' id='css.stylesheet' href='vym.css' />
+
+<head><title>Python3_Syntax</title></head>
+<body>
+<center><img src="Python3_Syntax.png"alt="Image of map: Python3_Syntax.vym" usemap='#imagemap'></center>
+<table class="vym-toc">
+<tr><td class="vym-toc-title">
+Contents:
+</td></tr>
+<tr><td>
+<div class="vym-toc-branch-0"><a href="#mc:0">  Python3 Syntax</a></br>
+</div><div class="vym-toc-branch-1"><a href="#mc:0,bo:0"> 1.  Comment</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:0,bo:0"> 1.1.  Single Line</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:0,bo:0,bo:0"> 1.1.1.  # comment text</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:0,bo:1"> 1.2.  Muti Line</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:0,bo:1,bo:0"> 1.2.1.  ''' 
+
+comment text1
+
+comment text2...
+
+'''</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:0,bo:1,bo:1"> 1.2.2.  &quot;&quot;&quot;
+
+comment text1
+
+comment text2...
+
+&quot;&quot;&quot;</a></br>
+</div><div class="vym-toc-branch-1"><a href="#mc:0,bo:1"> 2.  Name</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:1,bo:0"> 2.1.  Big Camel-Case</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:1,bo:0,bo:0"> 2.1.1.  VarName</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:1,bo:1"> 2.2.  little Camel-Case</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:1,bo:1,bo:0"> 2.2.1.  varName</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:1,bo:2"> 2.3.  underline</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:1,bo:2,bo:0"> 2.3.1.  var_name</a></br>
+</div><div class="vym-toc-branch-1"><a href="#mc:0,bo:2"> 3.  Date Type</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:2,bo:0"> 3.1.  Number</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:0,bo:0"> 3.1.1.  Int</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:0,bo:1"> 3.1.2.  Float</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:2,bo:1"> 3.2.  Boolean</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:1,bo:0"> 3.2.1.  True</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:1,bo:1"> 3.2.2.  False</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:2,bo:2"> 3.3.  Str</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:2,bo:3"> 3.4.  List</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:2,bo:4"> 3.5.  Tuple</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:2,bo:5"> 3.6.  Set</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:2,bo:6"> 3.7.  Dict</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:2,bo:7"> 3.8.  Convert</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:7,bo:0"> 3.8.1.  int(x[,base])</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:7,bo:1"> 3.8.2.  float(x)</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:7,bo:2"> 3.8.3.  str(x)</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:7,bo:3"> 3.8.4.  tuple(x)</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:7,bo:4"> 3.8.5.  list(x)</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:7,bo:5"> 3.8.6.  set(x)</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:7,bo:6"> 3.8.7.  eval(str)</a></br>
+</div><div class="vym-toc-branch-1"><a href="#mc:0,bo:3"> 4.  Format Output</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:3,bo:0"> 4.1.  %s</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:3,bo:1"> 4.2.  %d</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:3,bo:2"> 4.3.  %f</a></br>
+</div></td></tr>
+</table>
+
+
+<h1><span class='vym-branch-0' style='color:#000000' id='mc:0'> Python3 Syntax</span></h1>
+  
+  <h2><span class='vym-branch-1' style='color:#000000' id='mc:0,bo:0'>1.  Comment</span></h2>
+    <ul class="vym-list-ul-2">
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:0,bo:0'>1.1.  Single Line</span>
+      <ul class="vym-list-ul-3">
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:0,bo:0,bo:0'>1.1.1.  # comment text</span>  </li>
+      </ul>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:0,bo:1'>1.2.  Muti Line</span>
+      <ul class="vym-list-ul-3">
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:0,bo:1,bo:0'>1.2.1.  ''' 
+
+comment text1
+
+comment text2...
+
+'''</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:0,bo:1,bo:1'>1.2.2.  &quot;&quot;&quot;
+
+comment text1
+
+comment text2...
+
+&quot;&quot;&quot;</span>  </li>
+      </ul>  </li>
+    </ul>
+  <h2><span class='vym-branch-1' style='color:#000000' id='mc:0,bo:1'>2.  Name</span></h2>
+    <ul class="vym-list-ul-2">
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:1,bo:0'>2.1.  Big Camel-Case</span>
+      <ul class="vym-list-ul-3">
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:1,bo:0,bo:0'>2.1.1.  VarName</span>  </li>
+      </ul>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:1,bo:1'>2.2.  little Camel-Case</span>
+      <ul class="vym-list-ul-3">
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:1,bo:1,bo:0'>2.2.1.  varName</span>  </li>
+      </ul>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:1,bo:2'>2.3.  underline</span>
+      <ul class="vym-list-ul-3">
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:1,bo:2,bo:0'>2.3.1.  var_name</span>  </li>
+      </ul>  </li>
+    </ul>
+  <h2><span class='vym-branch-1' style='color:#000000' id='mc:0,bo:2'>3.  Date Type</span></h2>
+    <ul class="vym-list-ul-2">
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:2,bo:0'>3.1.  Number</span>
+      <ul class="vym-list-ul-3">
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:0,bo:0'>3.1.1.  Int</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:0,bo:1'>3.1.2.  Float</span>  </li>
+      </ul>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:2,bo:1'>3.2.  Boolean</span>
+      <ul class="vym-list-ul-3">
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:1,bo:0'>3.2.1.  True</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:1,bo:1'>3.2.2.  False</span>  </li>
+      </ul>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:2,bo:2'>3.3.  Str</span>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:2,bo:3'>3.4.  List</span>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:2,bo:4'>3.5.  Tuple</span>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:2,bo:5'>3.6.  Set</span>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:2,bo:6'>3.7.  Dict</span>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:2,bo:7'>3.8.  Convert</span>
+      <ul class="vym-list-ul-3">
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:7,bo:0'>3.8.1.  int(x[,base])</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:7,bo:1'>3.8.2.  float(x)</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:7,bo:2'>3.8.3.  str(x)</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:7,bo:3'>3.8.4.  tuple(x)</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:7,bo:4'>3.8.5.  list(x)</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:7,bo:5'>3.8.6.  set(x)</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:7,bo:6'>3.8.7.  eval(str)<img src="flags/flag-lamp.png" alt="Flag: lamp"></span>
+<table class="vym-note"><tr><td class="vym-note-flag">
+<td>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+
+<p class="vym-fixed-note-paragraph"><span style=" font-family:'Courier','Source Code Pro'; font-size:12pt; font-weight:384; color:#000000;">convert string to the original date type,</span></p>
+<p class="vym-fixed-note-paragraph"><span style=" font-family:'Courier','Source Code Pro'; font-size:12pt; font-weight:384; color:#000000;">take off the quotation marks.</span></p>
+</td></tr></table>
+  </li>
+      </ul>  </li>
+    </ul>
+  <h2><span class='vym-branch-1' style='color:#000000' id='mc:0,bo:3'>4.  Format Output</span>
+<table class="vym-note"><tr><td class="vym-note-flag">
+<td>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+
+<p class="vym-note-paragraph"><span style=" font-family:'Sans Serif','Source Code Pro'; font-size:12pt;">placeholder:</span></p>
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">print(&quot;----%s----%d----&quot; % (var1, var2))</span></p>
+<p class="vym-note-paragraph"><br /></p>
+<p class="vym-note-paragraph"><span style=" font-family:'Sans Serif','Source Code Pro'; font-size:12pt;">format function:</span></p>
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">place ordered</span></p>
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">1.print(&quot;----{}----{}----&quot;.format(var1, var2))</span></p>
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">number ordered</span></p>
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">2.print(&quot;----{0}----{1}----&quot;.format(var1, var2))</span></p>
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">keyword</span></p>
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">3.print(&quot;----{a}----{b}----&quot;.format(a=var1, b=var2))</span></p>
+<p class="vym-note-paragraph"><br /></p>
+<p class="vym-note-paragraph"><br /></p>
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">for %s the f string is better!</span></p>
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">a = &quot;apple&quot;</span></p>
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">b = &quot;banana&quot;</span></p>
+<p class="vym-note-paragraph"><span style=" font-family:'DejaVu Sans Mono','Source Code Pro'; font-size:12pt; color:#000000;">print(f&quot;{a}, {b}&quot;)</span></p>
+</td></tr></table>
+</h2>
+    <ul class="vym-list-ul-2">
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:3,bo:0'>4.1.  %s</span>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:3,bo:1'>4.2.  %d</span>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:3,bo:2'>4.3.  %f</span>  </li>
+    </ul>
+  
+
+<map name='imagemap'>
+  <area shape='rect' coords='328.631,215.83,512.943,250.83' href='#mc:0' alt='Python3 Syntax'>
+  <area shape='rect' coords='567.108,97,654.842,130' href='#mc:0,bo:0' alt='Comment'>
+  <area shape='rect' coords='675.842,5,789.373,34' href='#mc:0,bo:0,bo:0' alt='Single Line'>
+  <area shape='rect' coords='810.373,5,952.686,34' href='#mc:0,bo:0,bo:0,bo:0' alt='# comment text'>
+  <area shape='rect' coords='675.842,114.5,770.186,143.5' href='#mc:0,bo:0,bo:1' alt='Muti Line'>
+  <area shape='rect' coords='791.186,36,952.686,128' href='#mc:0,bo:0,bo:1,bo:0' alt='''' 
+
+comment text1
+
+comment text2...
+
+''''>
+  <area shape='rect' coords='791.186,130,952.686,222' href='#mc:0,bo:0,bo:1,bo:1' alt='&quot;&quot;&quot;
+
+comment text1
+
+comment text2...
+
+&quot;&quot;&quot;'>
+  <area shape='rect' coords='560.137,363.68,613.7,396.68' href='#mc:0,bo:1' alt='Name'>
+  <area shape='rect' coords='634.7,334.68,777.012,363.68' href='#mc:0,bo:1,bo:0' alt='Big Camel-Case'>
+  <area shape='rect' coords='798.012,334.68,873.169,363.68' href='#mc:0,bo:1,bo:0,bo:0' alt='VarName'>
+  <area shape='rect' coords='634.7,365.68,805.794,394.68' href='#mc:0,bo:1,bo:1' alt='little Camel-Case'>
+  <area shape='rect' coords='826.794,365.68,901.95,394.68' href='#mc:0,bo:1,bo:1,bo:0' alt='varName'>
+  <area shape='rect' coords='634.7,396.68,729.044,425.68' href='#mc:0,bo:1,bo:2' alt='underline'>
+  <area shape='rect' coords='750.044,396.68,834.794,425.68' href='#mc:0,bo:1,bo:2,bo:0' alt='var_name'>
+  <area shape='rect' coords='261,385.682,371.516,418.682' href='#mc:0,bo:2' alt='Date Type'>
+  <area shape='rect' coords='174.438,170.682,240,199.682' href='#mc:0,bo:2,bo:0' alt='Number'>
+  <area shape='rect' coords='116.656,155.182,153.438,184.182' href='#mc:0,bo:2,bo:0,bo:0' alt='Int'>
+  <area shape='rect' coords='97.4688,186.182,153.438,215.182' href='#mc:0,bo:2,bo:0,bo:1' alt='Float'>
+  <area shape='rect' coords='164.844,232.682,240,261.682' href='#mc:0,bo:2,bo:1' alt='Boolean'>
+  <area shape='rect' coords='97.4688,217.182,143.844,246.182' href='#mc:0,bo:2,bo:1,bo:0' alt='True'>
+  <area shape='rect' coords='87.875,248.182,143.844,277.182' href='#mc:0,bo:2,bo:1,bo:1' alt='False'>
+  <area shape='rect' coords='203.219,279.182,240,308.182' href='#mc:0,bo:2,bo:2' alt='Str'>
+  <area shape='rect' coords='193.625,310.182,240,339.182' href='#mc:0,bo:2,bo:3' alt='List'>
+  <area shape='rect' coords='184.031,341.182,240,370.182' href='#mc:0,bo:2,bo:4' alt='Tuple'>
+  <area shape='rect' coords='203.219,372.182,240,401.182' href='#mc:0,bo:2,bo:5' alt='Set'>
+  <area shape='rect' coords='193.625,403.182,240,432.182' href='#mc:0,bo:2,bo:6' alt='Dict'>
+  <area shape='rect' coords='164.844,527.182,240,556.182' href='#mc:0,bo:2,bo:7' alt='Convert'>
+  <area shape='rect' coords='11.125,434.182,143.844,463.182' href='#mc:0,bo:2,bo:7,bo:0' alt='int(x[,base])'>
+  <area shape='rect' coords='59.0938,465.182,143.844,494.182' href='#mc:0,bo:2,bo:7,bo:1' alt='float(x)'>
+  <area shape='rect' coords='78.2813,496.182,143.844,525.182' href='#mc:0,bo:2,bo:7,bo:2' alt='str(x)'>
+  <area shape='rect' coords='59.0938,527.182,143.844,556.182' href='#mc:0,bo:2,bo:7,bo:3' alt='tuple(x)'>
+  <area shape='rect' coords='68.6875,558.182,143.844,587.182' href='#mc:0,bo:2,bo:7,bo:4' alt='list(x)'>
+  <area shape='rect' coords='78.2813,589.182,143.844,618.182' href='#mc:0,bo:2,bo:7,bo:5' alt='set(x)'>
+  <area shape='rect' coords='27.5,620.182,121.844,649.182' href='#mc:0,bo:2,bo:7,bo:6' alt='eval(str)'>
+  <area shape='rect' coords='264.437,89.9799,420.515,122.98' href='#mc:0,bo:3' alt='Format Output'>
+  <area shape='rect' coords='194.249,60.9799,221.437,89.9799' href='#mc:0,bo:3,bo:0' alt='%s'>
+  <area shape='rect' coords='194.249,91.9799,221.437,120.98' href='#mc:0,bo:3,bo:1' alt='%d'>
+  <area shape='rect' coords='194.249,122.98,221.437,151.98' href='#mc:0,bo:3,bo:2' alt='%f'>
+</map>
+<hr/>
+<table class="vym-footer">   
+        <tr> 
+        <td class="vym-footerL">/home/normal/Local_Mind_Map/Python3_Syntax_Export/Python3_Syntax.html</td> 
+            <td class="vym-footerC">2020-12-27</td> 
+            <td class="vym-footerR"> <a href='http://www.insilmaril.de/vym'>vym 2.7.500</a></td> 
+            </tr> 
+             </table>
+</body></html>
