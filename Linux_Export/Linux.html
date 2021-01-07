@@ -1,0 +1,230 @@
+<html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+<meta name="generator=" content=" vym - view your mind - 2.7.500 - http://www.insilmaril.de/vym">
+<meta name="author" content="unknown user"> 
+<meta name="description" content=""> 
+<link rel='stylesheet' id='css.stylesheet' href='vym.css' />
+
+<head><title>Linux</title></head>
+<body>
+<center><img src="Linux.png"alt="Image of map: Linux.vym" usemap='#imagemap'></center>
+<table class="vym-toc">
+<tr><td class="vym-toc-title">
+Contents:
+</td></tr>
+<tr><td>
+<div class="vym-toc-branch-0"><a href="#mc:0">  Linux</a></br>
+</div><div class="vym-toc-branch-1"><a href="#mc:0,bo:0"> 1.  Storage Management</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:0,bo:0"> 1.1.  Quota</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:0,bo:0,bo:0"> 1.1.1.  soft</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:0,bo:0,bo:1"> 1.1.2.  grace time</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:0,bo:0,bo:2"> 1.1.3.  hard</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:0,bo:1"> 1.2.  RAID</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:0,bo:1,bo:0"> 1.2.1.  RAID 0,1,5,10</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:0,bo:2"> 1.3.  LVM</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:0,bo:2,bo:0"> 1.3.1.  PV</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:0,bo:2,bo:1"> 1.3.2.  VG</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:0,bo:2,bo:2"> 1.3.3.  LV</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:0,bo:2,bo:3"> 1.3.4.  PE</a></br>
+</div><div class="vym-toc-branch-1"><a href="#mc:0,bo:1"> 2.  File Management</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:1,bo:0"> 2.1.  Basic Permissions</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:1,bo:0,bo:0"> 2.1.1.  rwx</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:1,bo:1"> 2.2.  Special Permissions</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:1,bo:1,bo:0"> 2.2.1.  SUID</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:1,bo:1,bo:1"> 2.2.2.  SGID</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:1,bo:1,bo:2"> 2.2.3.  SBIT</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:1,bo:2"> 2.3.  Hidden Attribute</a></br>
+</div><div class="vym-toc-branch-1"><a href="#mc:0,bo:2"> 3.  User/Group Management</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:2,bo:0"> 3.1.  User</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:0,bo:0"> 3.1.1.  Identity</a></br>
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:2,bo:0,bo:0,bo:0"> 3.1.1.1.  root</a></br>
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:2,bo:0,bo:0,bo:1"> 3.1.1.2.  system</a></br>
+</div><div class="vym-toc-branch-4"><a href="#mc:0,bo:2,bo:0,bo:0,bo:2"> 3.1.1.3.  normal</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:0,bo:1"> 3.1.2.  UID</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:2,bo:1"> 3.2.  Group</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:1,bo:0"> 3.2.1.  GID</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:1,bo:1"> 3.2.2.  Original Group</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:1,bo:2"> 3.2.3.  Effective Group</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:1,bo:3"> 3.2.4.  Extension Group</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:2,bo:2"> 3.3.  Relative Files</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:2,bo:0"> 3.3.1.  /etc/passwd</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:2,bo:1"> 3.3.2.  /etc/shadow</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:2,bo:2"> 3.3.3.  /etc/group</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:2,bo:2,bo:3"> 3.3.4.  /etc/gshadow</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:2,bo:3"> 3.4.  ACL</a></br>
+</div><div class="vym-toc-branch-1"><a href="#mc:0,bo:3"> 4.  Network Management</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:3,bo:0"> 4.1.  SELinux</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:3,bo:1"> 4.2.  Firewall</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:3,bo:2"> 4.3.  DHCP</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:3,bo:3"> 4.4.  SSH</a></br>
+</div><div class="vym-toc-branch-1"><a href="#mc:0,bo:4"> 5.  Filesystem</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:4,bo:0"> 5.1.  EXT</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:4,bo:0,bo:0"> 5.1.1.  inode</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:4,bo:0,bo:1"> 5.1.2.  block</a></br>
+</div><div class="vym-toc-branch-3"><a href="#mc:0,bo:4,bo:0,bo:2"> 5.1.3.  superblock</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:4,bo:1"> 5.2.  VFS</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:4,bo:2"> 5.3.  FHS</a></br>
+</div><div class="vym-toc-branch-1"><a href="#mc:0,bo:5"> 6.  Set Up Server</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:5,bo:0"> 6.1.  LNMP</a></br>
+</div><div class="vym-toc-branch-2"><a href="#mc:0,bo:5,bo:1"> 6.2.  LAMP</a></br>
+</div><div class="vym-toc-branch-1"><a href="#mc:0,bo:6"> 7.  EMail Management</a></br>
+</div></td></tr>
+</table>
+
+
+<h1><span class='vym-branch-0' style='color:#000000' id='mc:0'> Linux</span></h1>
+  
+  <h2><span class='vym-branch-1' style='color:#000000' id='mc:0,bo:0'>1.  Storage Management</span></h2>
+    <ul class="vym-list-ul-2">
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:0,bo:0'>1.1.  Quota</span>
+      <ul class="vym-list-ul-3">
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:0,bo:0,bo:0'>1.1.1.  soft</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:0,bo:0,bo:1'>1.1.2.  grace time</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:0,bo:0,bo:2'>1.1.3.  hard</span>  </li>
+      </ul>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:0,bo:1'>1.2.  RAID</span>
+      <ul class="vym-list-ul-3">
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:0,bo:1,bo:0'>1.2.1.  RAID 0,1,5,10</span>  </li>
+      </ul>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:0,bo:2'>1.3.  LVM</span>
+      <ul class="vym-list-ul-3">
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:0,bo:2,bo:0'>1.3.1.  PV</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:0,bo:2,bo:1'>1.3.2.  VG</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:0,bo:2,bo:2'>1.3.3.  LV</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:0,bo:2,bo:3'>1.3.4.  PE</span>  </li>
+      </ul>  </li>
+    </ul>
+  <h2><span class='vym-branch-1' style='color:#000000' id='mc:0,bo:1'>2.  File Management</span></h2>
+    <ul class="vym-list-ul-2">
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:1,bo:0'>2.1.  Basic Permissions</span>
+      <ul class="vym-list-ul-3">
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:1,bo:0,bo:0'>2.1.1.  rwx</span>  </li>
+      </ul>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:1,bo:1'>2.2.  Special Permissions</span>
+      <ul class="vym-list-ul-3">
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:1,bo:1,bo:0'>2.2.1.  SUID</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:1,bo:1,bo:1'>2.2.2.  SGID</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:1,bo:1,bo:2'>2.2.3.  SBIT</span>  </li>
+      </ul>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:1,bo:2'>2.3.  Hidden Attribute</span>  </li>
+    </ul>
+  <h2><span class='vym-branch-1' style='color:#000000' id='mc:0,bo:2'>3.  User/Group Management</span></h2>
+    <ul class="vym-list-ul-2">
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:2,bo:0'>3.1.  User</span>
+      <ul class="vym-list-ul-3">
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:0,bo:0'>3.1.1.  Identity</span>
+        <ul class="vym-list-ul-4">
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:2,bo:0,bo:0,bo:0'>3.1.1.1.  root</span>  </li>
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:2,bo:0,bo:0,bo:1'>3.1.1.2.  system</span>  </li>
+          <li><span class='vym-branch-4' style='color:#000000' id='mc:0,bo:2,bo:0,bo:0,bo:2'>3.1.1.3.  normal</span>  </li>
+        </ul>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:0,bo:1'>3.1.2.  UID</span>  </li>
+      </ul>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:2,bo:1'>3.2.  Group</span>
+      <ul class="vym-list-ul-3">
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:1,bo:0'>3.2.1.  GID</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:1,bo:1'>3.2.2.  Original Group</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:1,bo:2'>3.2.3.  Effective Group</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:1,bo:3'>3.2.4.  Extension Group</span>  </li>
+      </ul>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:2,bo:2'>3.3.  Relative Files</span>
+      <ul class="vym-list-ul-3">
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:2,bo:0'>3.3.1.  /etc/passwd</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:2,bo:1'>3.3.2.  /etc/shadow</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:2,bo:2'>3.3.3.  /etc/group</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:2,bo:2,bo:3'>3.3.4.  /etc/gshadow</span>  </li>
+      </ul>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:2,bo:3'>3.4.  ACL</span>  </li>
+    </ul>
+  <h2><span class='vym-branch-1' style='color:#000000' id='mc:0,bo:3'>4.  Network Management</span></h2>
+    <ul class="vym-list-ul-2">
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:3,bo:0'>4.1.  SELinux</span>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:3,bo:1'>4.2.  Firewall</span>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:3,bo:2'>4.3.  DHCP</span>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:3,bo:3'>4.4.  SSH</span>  </li>
+    </ul>
+  <h2><span class='vym-branch-1' style='color:#000000' id='mc:0,bo:4'>5.  Filesystem</span></h2>
+    <ul class="vym-list-ul-2">
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:4,bo:0'>5.1.  EXT</span>
+      <ul class="vym-list-ul-3">
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:4,bo:0,bo:0'>5.1.1.  inode</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:4,bo:0,bo:1'>5.1.2.  block</span>  </li>
+        <li><span class='vym-branch-3' style='color:#000000' id='mc:0,bo:4,bo:0,bo:2'>5.1.3.  superblock</span>  </li>
+      </ul>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:4,bo:1'>5.2.  VFS</span>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:4,bo:2'>5.3.  FHS</span>  </li>
+    </ul>
+  <h2><span class='vym-branch-1' style='color:#000000' id='mc:0,bo:5'>6.  Set Up Server</span></h2>
+    <ul class="vym-list-ul-2">
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:5,bo:0'>6.1.  LNMP</span>  </li>
+      <li><span class='vym-branch-2' style='color:#000000' id='mc:0,bo:5,bo:1'>6.2.  LAMP</span>  </li>
+    </ul>
+  <h2><span class='vym-branch-1' style='color:#000000' id='mc:0,bo:6'>7.  EMail Management</span></h2>
+  
+
+<map name='imagemap'>
+  <area shape='rect' coords='646.421,420.97,717.389,455.97' href='#mc:0' alt='Linux'>
+  <area shape='rect' coords='809.687,289.961,1022.72,322.961' href='#mc:0,bo:0' alt='Storage Management'>
+  <area shape='rect' coords='1043.72,214.461,1099.69,243.461' href='#mc:0,bo:0,bo:0' alt='Quota'>
+  <area shape='rect' coords='1120.69,183.461,1167.06,212.461' href='#mc:0,bo:0,bo:0,bo:0' alt='soft'>
+  <area shape='rect' coords='1120.69,214.461,1224.62,243.461' href='#mc:0,bo:0,bo:0,bo:1' alt='grace time'>
+  <area shape='rect' coords='1120.69,245.461,1167.06,274.461' href='#mc:0,bo:0,bo:0,bo:2' alt='hard'>
+  <area shape='rect' coords='1043.72,276.461,1090.09,305.461' href='#mc:0,bo:0,bo:1' alt='RAID'>
+  <area shape='rect' coords='1111.09,276.461,1243.81,305.461' href='#mc:0,bo:0,bo:1,bo:0' alt='RAID 0,1,5,10'>
+  <area shape='rect' coords='1043.72,353.961,1080.5,382.961' href='#mc:0,bo:0,bo:2' alt='LVM'>
+  <area shape='rect' coords='1101.5,307.461,1128.69,336.461' href='#mc:0,bo:0,bo:2,bo:0' alt='PV'>
+  <area shape='rect' coords='1101.5,338.461,1128.69,367.461' href='#mc:0,bo:0,bo:2,bo:1' alt='VG'>
+  <area shape='rect' coords='1101.5,369.461,1128.69,398.461' href='#mc:0,bo:0,bo:2,bo:2' alt='LV'>
+  <area shape='rect' coords='1101.5,400.461,1128.69,429.461' href='#mc:0,bo:0,bo:2,bo:3' alt='PE'>
+  <area shape='rect' coords='820.255,573.821,999.115,606.821' href='#mc:0,bo:1' alt='File Management'>
+  <area shape='rect' coords='1020.11,513.821,1191.21,542.821' href='#mc:0,bo:1,bo:0' alt='Basic Permissions'>
+  <area shape='rect' coords='1212.21,513.821,1248.99,542.821' href='#mc:0,bo:1,bo:0,bo:0' alt='rwx'>
+  <area shape='rect' coords='1020.11,575.821,1210.4,604.821' href='#mc:0,bo:1,bo:1' alt='Special Permissions'>
+  <area shape='rect' coords='1231.4,544.821,1277.77,573.821' href='#mc:0,bo:1,bo:1,bo:0' alt='SUID'>
+  <area shape='rect' coords='1231.4,575.821,1277.77,604.821' href='#mc:0,bo:1,bo:1,bo:1' alt='SGID'>
+  <area shape='rect' coords='1231.4,606.821,1277.77,635.821' href='#mc:0,bo:1,bo:1,bo:2' alt='SBIT'>
+  <area shape='rect' coords='1020.11,637.821,1181.61,666.821' href='#mc:0,bo:1,bo:2' alt='Hidden Attribute'>
+  <area shape='rect' coords='312.938,213.54,560.141,246.54' href='#mc:0,bo:2' alt='User/Group Management'>
+  <area shape='rect' coords='245.563,76.0401,291.938,105.04' href='#mc:0,bo:2,bo:0' alt='User'>
+  <area shape='rect' coords='139.813,60.5401,224.563,89.5401' href='#mc:0,bo:2,bo:0,bo:0' alt='Identity'>
+  <area shape='rect' coords='72.4375,29.5401,118.813,58.5401' href='#mc:0,bo:2,bo:0,bo:0,bo:0' alt='root'>
+  <area shape='rect' coords='53.25,60.5401,118.813,89.5401' href='#mc:0,bo:2,bo:0,bo:0,bo:1' alt='system'>
+  <area shape='rect' coords='53.25,91.5401,118.813,120.54' href='#mc:0,bo:2,bo:0,bo:0,bo:2' alt='normal'>
+  <area shape='rect' coords='187.781,122.54,224.563,151.54' href='#mc:0,bo:2,bo:0,bo:1' alt='UID'>
+  <area shape='rect' coords='235.969,200.04,291.938,229.04' href='#mc:0,bo:2,bo:1' alt='Group'>
+  <area shape='rect' coords='178.188,153.54,214.969,182.54' href='#mc:0,bo:2,bo:1,bo:0' alt='GID'>
+  <area shape='rect' coords='72.6563,184.54,214.969,213.54' href='#mc:0,bo:2,bo:1,bo:1' alt='Original Group'>
+  <area shape='rect' coords='63.0625,215.54,214.969,244.54' href='#mc:0,bo:2,bo:1,bo:2' alt='Effective Group'>
+  <area shape='rect' coords='63.0625,246.54,214.969,275.54' href='#mc:0,bo:2,bo:1,bo:3' alt='Extension Group'>
+  <area shape='rect' coords='149.625,324.04,291.938,353.04' href='#mc:0,bo:2,bo:2' alt='Relative Files'>
+  <area shape='rect' coords='15.0938,277.54,128.625,306.54' href='#mc:0,bo:2,bo:2,bo:0' alt='/etc/passwd'>
+  <area shape='rect' coords='15.0938,308.54,128.625,337.54' href='#mc:0,bo:2,bo:2,bo:1' alt='/etc/shadow'>
+  <area shape='rect' coords='24.6875,339.54,128.625,368.54' href='#mc:0,bo:2,bo:2,bo:2' alt='/etc/group'>
+  <area shape='rect' coords='5.5,370.54,128.625,399.54' href='#mc:0,bo:2,bo:2,bo:3' alt='/etc/gshadow'>
+  <area shape='rect' coords='255.156,401.54,291.938,430.54' href='#mc:0,bo:2,bo:3' alt='ACL'>
+  <area shape='rect' coords='215.362,502.368,428.393,535.368' href='#mc:0,bo:3' alt='Network Management'>
+  <area shape='rect' coords='119.205,457.868,194.362,486.868' href='#mc:0,bo:3,bo:0' alt='SELinux'>
+  <area shape='rect' coords='109.612,488.868,194.362,517.868' href='#mc:0,bo:3,bo:1' alt='Firewall'>
+  <area shape='rect' coords='147.987,519.868,194.362,548.868' href='#mc:0,bo:3,bo:2' alt='DHCP'>
+  <area shape='rect' coords='157.58,550.868,194.362,579.868' href='#mc:0,bo:3,bo:3' alt='SSH'>
+  <area shape='rect' coords='723.391,65,845.297,98' href='#mc:0,bo:4' alt='Filesystem'>
+  <area shape='rect' coords='866.297,36,903.078,65' href='#mc:0,bo:4,bo:0' alt='EXT'>
+  <area shape='rect' coords='924.078,5,980.047,34' href='#mc:0,bo:4,bo:0,bo:0' alt='inode'>
+  <area shape='rect' coords='924.078,36,980.047,65' href='#mc:0,bo:4,bo:0,bo:1' alt='block'>
+  <area shape='rect' coords='924.078,67,1028.02,96' href='#mc:0,bo:4,bo:0,bo:2' alt='superblock'>
+  <area shape='rect' coords='866.297,98,903.078,127' href='#mc:0,bo:4,bo:1' alt='VFS'>
+  <area shape='rect' coords='866.297,129,903.078,158' href='#mc:0,bo:4,bo:2' alt='FHS'>
+  <area shape='rect' coords='741.615,712.007,897.693,745.007' href='#mc:0,bo:5' alt='Set Up Server'>
+  <area shape='rect' coords='918.693,698.507,965.068,727.507' href='#mc:0,bo:5,bo:0' alt='LNMP'>
+  <area shape='rect' coords='918.693,729.507,965.068,758.507' href='#mc:0,bo:5,bo:1' alt='LAMP'>
+  <area shape='rect' coords='377.368,628.18,567.618,661.18' href='#mc:0,bo:6' alt='EMail Management'>
+</map>
+<hr/>
+<table class="vym-footer">   
+        <tr> 
+        <td class="vym-footerL">/home/normal/Local_Mind_Map/Linux_Export/Linux.html</td> 
+            <td class="vym-footerC">2021-01-07</td> 
+            <td class="vym-footerR"> <a href='http://www.insilmaril.de/vym'>vym 2.7.500</a></td> 
+            </tr> 
+             </table>
+</body></html>
