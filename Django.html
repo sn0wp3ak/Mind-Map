@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="treestyles.css" type="text/css"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!--This file has been created with toxhtml.xsl--><head><meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /><title>Django</title><link rel="stylesheet" href="Django.html_files/treestyles.css" type="text/css" /><script type="text/javascript" src="Django.html_files/marktree.js"> 
+	</script></head><body><div class="basetop"><a onclick="expandAll(document.getElementById('base'))" href="#">Expand</a> -
+<a onclick="collapseAll(document.getElementById('base'))" href="#">Collapse</a></div><div class="basetext" id="base"><ul>
+	<li class="col" id="FMID_1768616360FM"><div class="nodecontent">Django</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_979468872FM"><img src="Django.html_files/icons/info.png" alt="info" /> <div class="nodecontent">安装+创建+启动</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1749155516FM"><div class="nodecontent">创建: django-admin startproject 项目名</div></li>
+	<li class="col" id="FMID_236814163FM"><div class="nodecontent">启动: python manage.py runserver [ip:port]</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1822151488FM"><div class="nodecontent">Django默认启动IP: 127.0.0.1 端口号: 8000</div></li></ul></li>
+	<li class="basic" id="FMID_1617830045FM"><div class="nodecontent">安装: pip install django</div></li></ul></li>
+	<li class="col" id="FMID_278932512FM"><div class="nodecontent">项目目录结构</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_98042482FM"><div class="nodecontent">项目根目录</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1673318689FM"><div class="nodecontent">同名子目录</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1522605001FM"><div class="nodecontent">__init__.py</div></li>
+	<li class="basic" id="FMID_1681299365FM"><div class="nodecontent">settings.py</div></li>
+	<li class="basic" id="FMID_62740916FM"><div class="nodecontent">urls.py</div></li>
+	<li class="basic" id="FMID_1836459040FM"><div class="nodecontent">wsgi.py</div></li></ul></li>
+	<li class="basic" id="FMID_69653070FM"><div class="nodecontent">manage.py</div></li></ul></li></ul></li>
+	<li class="col" id="FMID_715522129FM"><div class="nodecontent">子应用</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_121814370FM"><div class="nodecontent">创建</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1489874150FM"><div class="nodecontent">python manage.py startapp 子应用名</div></li></ul></li>
+	<li class="col" id="FMID_550277593FM"><div class="nodecontent">注册</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_487438060FM"><div class="nodecontent">在settings.py的INSTALLED_APPS列表中添加</div></li>
+	<li class="basic" id="FMID_810768404FM"><img src="Django.html_files/icons/yes.png" alt="yes" /> <div class="nodecontent">注册格式: '子应用名.apps.apps文件中的Config类'</div></li></ul></li>
+	<li class="col" id="FMID_1169151779FM"><div class="nodecontent">子应用目录结构</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1845910906FM"><div class="nodecontent">__init__.py</div></li>
+	<li class="basic" id="FMID_583858056FM"><div class="nodecontent">admin.py</div></li>
+	<li class="basic" id="FMID_1861689486FM"><div class="nodecontent">apps.py</div></li>
+	<li class="col" id="FMID_1530084976FM"><div class="nodecontent">migrations/</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1761814723FM"><div class="nodecontent">__init__.py</div></li></ul></li>
+	<li class="basic" id="FMID_407231005FM"><div class="nodecontent">models.py</div></li>
+	<li class="basic" id="FMID_378121737FM"><div class="nodecontent">test.py</div></li>
+	<li class="basic" id="FMID_1287730248FM"><div class="nodecontent">views.py</div></li></ul></li></ul></li>
+	<li class="col" id="FMID_1560738644FM"><div class="nodecontent">视图</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1034775232FM"><div class="nodecontent">创建</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1659309161FM"><div class="nodecontent">在子应用的views.py中编写视图代码</div></li></ul></li></ul></li>
+	<li class="col" id="FMID_183380205FM"><div class="nodecontent">路由</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_545280360FM"><div class="nodecontent">主路由文件</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1963168668FM"><div class="nodecontent">项目同名子目录中的urls.py文件(路由解析的入口)</div></li></ul></li>
+	<li class="col" id="FMID_917457322FM"><div class="nodecontent">子路由文件</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_946426089FM"><div class="nodecontent">在子应用目录下新建urls.py文件</div></li></ul></li>
+	<li class="col" id="FMID_483928185FM"><div class="nodecontent">路由路径: 主路由找子路由, 子路由找视图</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1980553535FM"><div class="nodecontent">include方法用来把子路由包含到主路由 include('子应用.urls')</div></li>
+	<li class="basic" id="FMID_653879967FM"><div class="nodecontent">Django在检查路由时, 即使不加/也会自动定向到带/的路由</div></li></ul></li>
+	<li class="col" id="FMID_609859315FM"><div class="nodecontent">路由命名(给路由起名)</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1808220184FM"><div class="nodecontent">在使用include函数时, 使用namespace定义命名空间</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1591650483FM"><div class="nodecontent">一般是给子应用定义命名空间</div></li></ul></li>
+	<li class="basic" id="FMID_555626780FM"><div class="nodecontent">在子路由urls文件的列表使用name参数定义具体路由名字</div></li>
+	<li class="basic" id="FMID_1485630413FM"><div class="nodecontent">作用: 方便查找, 解决路由屏蔽问题</div></li></ul></li>
+	<li class="col" id="FMID_62269919FM"><div class="nodecontent">路由解析</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1887761459FM"><div class="nodecontent">顺序:由上至下(可能会导致路由屏蔽)</div></li>
+	<li class="col" id="FMID_1429466721FM"><div class="nodecontent">路由屏蔽的解决方案</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_895888049FM"><div class="nodecontent">刻意地调整路由定义的顺序</div></li>
+	<li class="basic" id="FMID_406405182FM"><div class="nodecontent">使用命名来规划路由</div></li></ul></li>
+	<li class="col" id="FMID_293127200FM"><div class="nodecontent">反向解析</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1212634076FM"><div class="nodecontent">根据命名返回具体的路由路径</div></li>
+	<li class="basic" id="FMID_1871729591FM"><div class="nodecontent">格式: url = reverse('namespace:name')</div></li></ul></li></ul></li></ul></li>
+	<li class="basic" id="FMID_857566227FM"><div class="nodecontent">配置</div></li></ul></li></ul></div></body></html>
